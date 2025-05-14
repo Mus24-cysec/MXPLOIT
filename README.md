@@ -1,6 +1,6 @@
 # MXPLOIT - Advanced Web Vulnerability Scanner
 
-![MXPLOIT Banner](banner.png)
+![MXPLOIT Banner](mxploit.png)
 
 A comprehensive security tool for detecting XSS, SQL Injection, and Open Redirect vulnerabilities in web applications.
 
