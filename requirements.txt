@@ -1,19 +1,7 @@
-# Core Requirements
-requests==2.31.0
-urllib3==2.0.4
-colorama==0.4.6
-selenium==4.10.0
-webdriver-manager==3.8.6
-prompt-toolkit==3.0.39
-concurrent-log-handler==0.9.24
-
-# Optional (for enhanced features)
-beautifulsoup4==4.12.2  # HTML parsing
-lxml==4.9.3             # Faster XML parsing
-pyopenssl==23.2.0       # SSL/TLS features
-tqdm==4.66.1            # Progress bars
-
-# Development Tools (optional)
-pytest==7.4.0
-pytest-cov==4.1.0
-flake8==6.1.0
+selenium>=4.0.0
+webdriver-manager>=3.8.0
+requests>=2.26.0
+urllib3>=1.26.0
+prompt-toolkit>=3.0.0
+colorama>=0.4.0
+concurrent-log-handler>=0.9.20
